@@ -1,0 +1,199 @@
+.container-characters {
+  display: flex;
+  flex-direction: column;
+}
+
+.section:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.section:last-child {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.searchText {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+}
+
+input {
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+h1:hover {
+  color: red;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px;
+  font-size: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  margin-bottom: 30px;
+}
+
+.characters {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.characterName {
+  color: white;
+}
+
+.characterDescription {
+  color: lightgreen;
+  height: 120px;
+  overflow: auto;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card .btnRemove {
+  width: 250px;
+  padding: 5px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.card .btnAdd {
+  width: 250px;
+  padding: 5px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*---------------------------------------------------
+TABLETTE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 700px de large maximum*/
+
+@media (max-width: 1024px) {
+  .container-characters {
+    padding: 10px;
+  }
+
+  .section:first-child {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section:last-child {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .characters {
+    width: 200px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .card .btnRemove {
+    width: 200px;
+  }
+  .card .btnAdd {
+    width: 200px;
+  }
+}
+
+/*---------------------------------------------------
+MOBILE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 400px de large maximum*/
+@media (max-width: 400px) {
+  .section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  input {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  h1 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    position: relative;
+    left: -130px;
+  }
+
+  .card {
+    width: 100%;
+    align-items: center;
+  }
+
+  .characters {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .card .btnRemove {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .card .btnAdd {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .characterName {
+    text-align: center;
+  }
+
+  .characterDescription {
+    text-align: center;
+  }
+}

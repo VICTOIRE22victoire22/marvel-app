@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto;
+    gap: 8px;
+}
+
+label {
+    color: white;
+}
+
+input {
+    margin: 6px 0;
+}
+
+button {
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,112 @@
+.favorites {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px auto 30px auto;
+}
+
+h1:hover {
+    margin: 10px auto 20px auto;
+}
+
+.favoritesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #D6D3D1;
+    height: 120px;
+    overflow: auto;
+}
+
+.btnRemove {
+    width: 250px;
+    padding: 8px;
+    background-color: red;
+}
+
+
+
+/*---------------------------------------------------
+TABLETTE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 1024px de large maximum */
+@media (max-width: 1024px) {
+
+    .favorites {
+        padding: 10px;
+    }
+
+    .favoritesList {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    .btnRemove {
+        width: 200px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/*---------------------------------------------------
+MOBILE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 400px de large maximum */
+@media (max-width: 400px) {
+
+    .favoritesList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .btnRemove {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}

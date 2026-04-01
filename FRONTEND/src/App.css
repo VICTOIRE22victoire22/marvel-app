@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+}
+
+.container {
+    margin: 20px 50px;  /* marge extérieure de 20px (en haut et en bas) et 50px (à gauche et à droite) */
+}

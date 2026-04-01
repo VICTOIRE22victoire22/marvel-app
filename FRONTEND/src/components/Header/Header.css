@@ -1,0 +1,211 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+header img:hover {
+    transform: rotateY(360deg);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    padding: 5px;
+    background-color: red;
+    transition: transform 1s;
+}
+
+.menu:hover {
+    transform: translateY(-10px);
+    background-color: white;
+    color: red;
+}
+
+.logout {
+    font-size: 20px;
+    font-weight:bold;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    transition: transform 1s;
+}
+
+.logout:hover {
+    background-color: white;
+    color: green;
+    transform: translateY(-10px);
+}
+
+/*---------------------------------------------------
+TABLETTE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 700px de large maximum */
+@media (max-width: 1024px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+
+    .container-characters {
+        padding: 10px;
+    }
+
+    .section:first-child {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section:last-child {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .characters {
+        width: 200px;
+    }
+
+    .characters img {
+        width: 200px;
+    }
+
+    .card .btnRemove {
+        width: 200px;
+    }
+
+    .card .btnAdd {
+        width: 200px;
+    }
+
+    .characterName {
+        text-align: center;
+    }
+
+    .characterDescription {
+        text-align: center;
+    }
+}
+
+/*---------------------------------------------------
+MOBILE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 400px de large maximum */
+@media (max-width: 400px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .section:last-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 100%;
+        align-items: center;
+    }
+
+    .characters {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .characters img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .card .btnRemove {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .card .btnAdd {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .characterName {
+        text-align: center;
+    }
+
+    .characterDescription {
+        text-align: center;
+    }
+}

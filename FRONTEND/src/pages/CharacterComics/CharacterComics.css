@@ -1,0 +1,144 @@
+.container-characterComics {
+    display: flex;
+    flex-direction: column;
+}
+
+.section:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.section:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.characterComics {
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.characterComicTitle {
+    color: white;
+}
+
+.characterComicDescription {
+    color: lightgreen;
+    height: 120px;
+    line-height: 18px;
+    overflow: auto;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------------
+TABLETTE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 1024px de large maximum */
+@media (max-width: 1024px) {
+
+    .container-characterComics {
+        padding: 10px;
+    }
+
+    .section:first-child {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section:last-child {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .characterComics {
+        width: 200px;
+    }
+
+    .characterComics img {
+        width: 200px;
+    }
+
+    .characterComicTitle {
+        text-align: center;
+    }
+
+    .characterComicDescription {
+        text-align: center;
+    }
+}
+
+/*---------------------------------------------------
+MOBILE
+---------------------------------------------------*/
+/* Applique ces styles pour les écrans de 400px de large maximum */
+@media (max-width: 400px) {
+
+    .section:last-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 100%;
+        align-items: center;
+    }
+
+    .characterComics {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .characterComics img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .characterComicTitle {
+        text-align: center;
+    }
+
+    .characterComicDescription {
+        text-align: center;
+    }
+}
+
+
