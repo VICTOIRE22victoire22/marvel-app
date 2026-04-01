@@ -15,10 +15,22 @@ Elle a été codée dans les langages suivants :
 
 # Technologies utilisées
 
-Frontend : React, CSS, axios.
-Backend : Node.js, Express, API Marvel
-Versionning du code et collaboration : Git, GitHub
-Gestion de packages et de scripts : Yarn
+Frontend : 
+- React
+- CSS
+- axios
+
+Backend : 
+- Node.js
+- Express
+- API Marvel
+
+Versionning du code et collaboration : 
+- Git
+- GitHub
+
+Gestion de packages et de scripts : 
+- Yarn
 
 # Structure du projet
 
