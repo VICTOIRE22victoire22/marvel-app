@@ -1,133 +1,74 @@
-# 🦸‍♀️ Marvel App
+# Marvel App
 
-Application web permettant d'explorer l'univers Marvel avec une architecture **frontend (React)** et **backend (Node.js / Express)**.
+Application qui permet de découvrir les différents personnages du monde MARVEL, ainsi que les comics liés à ces personnages.
+Elle a été codée dans les langages suivants :
+- frontend : React
+- backend : Node.js et Express
 
----
+# Fonctionnalités
 
-## 🚀 Fonctionnalités
+- Barre de recherche avec auto-complétion pour rechercher des personnages et des comics MARVEL.
+- Barre de défilement pour la description des personnages, des comics et des comics liés aux personnages
+- Ajout de favoris
+- Formulaires de connexion et d'inscription
+- Responsive
 
-* 🔍 Recherche de personnages Marvel
-* 📄 Affichage des détails (nom, description, image…)
-* ❤️ Ajout de favoris
-* 🔐 Gestion utilisateur (si implémentée)
-* 📱 Interface responsive
+# Technologies utilisées
 
----
+Frontend : React, CSS, axios.
+Backend : Node.js, Express, API Marvel
+Versionning du code et collaboration : Git, GitHub
+Gestion de packages et de scripts : Yarn
 
-## 🛠️ Technologies utilisées
+# Structure du projet
 
-### Frontend
+marvel-app
+    BACKEND
+    FRONTEND
+    README.md
+    yarn.lock
 
-* React
-* CSS
-* Axios / Fetch
+# Installation
 
-### Backend
+Cloner le projet :
 
-* Node.js
-* Express
-* API Marvel
-
-### Autres
-
-* Git / GitHub
-* Yarn / npm
-
----
-
-## 📁 Structure du projet
-
-```
-marvel-app/
-│
-├── BACKEND/        # API Node.js / Express
-├── FRONTEND/       # Application React
-├── .gitignore
-├── README.md
-└── yarn.lock
-```
-
----
-
-## ⚙️ Installation
-
-### 1. Cloner le projet
-
-```bash
-git clone https://github.com/VICTOIRE22victoire22/marvel-app.git
+bash 
+git clone https://github.com/VICTOIRE22victoire22/marvel-app.git 
 cd marvel-app
-```
 
----
+# Lancement du projet
 
-### 2. Installer les dépendances
+# FRONTEND:
 
-#### Backend
-
-```bash
-cd BACKEND
-yarn install
-```
-
-#### Frontend
-
-```bash
 cd FRONTEND
-yarn install
-```
+yarn dev
 
----
-
-## ▶️ Lancer le projet
-
-### Backend
-
-```bash
+# BACKEND: 
+cd ..
 cd BACKEND
+yarn
 yarn start
-```
 
-### Frontend
+# Variables d'environnement
 
-```bash
-cd FRONTEND
-yarn start
-```
+Créer un fichier.env dans le dossier BACKEND
 
----
-
-## 🔐 Variables d'environnement
-
-Créer un fichier `.env` dans le dossier BACKEND :
-
-```
-MARVEL_PUBLIC_KEY=your_public_key
+MARVEL_PUBLIC_KEY=your_public_key 
 MARVEL_PRIVATE_KEY=your_private_key
-```
 
----
+# API
 
-## 🌐 API utilisée
+API Marvel
 
-* API officielle Marvel
+# Améliorations futures
 
----
+- Enregistrement des favoris en base de données
+- Pagination sur les pages des personnages, des comics et des comics liés aux personnages
 
-## 📌 Améliorations possibles
 
-* Authentification utilisateur
-* Sauvegarde des favoris en base de données
-* Pagination des résultats
-* UI/UX améliorée
 
----
 
-## 👩‍💻 Auteur
 
-Projet réalisé par **Odile** dans le cadre de sa formation concepteur développeur d'applications.
 
----
 
-## 📄 Licence
 
-Ce projet est libre d'utilisation à des fins pédagogiques.
